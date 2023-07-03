@@ -56,7 +56,9 @@
     </div>
     <p>I am a BSc.CSIT student currently enrolled in Bhaktapur Multiple Campus. Me as a student working smartly and hard to gain the maximum knowledge in the field of Computer Science and Information Technology. I am very passionate to learn about the things in computer science and coding and i always try to maximize my efforts in learning them. As a front end developer, I am trying to gaining more and more knowledge on HTML, CSS, JavaScript and I know the importance of each aspect in front end development for the both user and developer side. I am also very interested in Web Development and I think I can call myself as a Web Development Enthusiast too, since I have more interest in Web Development and really working hard to gain maximum knowledge in that field and pursuing my career in that field too.
     </p>
-    <a href="#about"><button class="btn">About Me <i class="fas fa-user"></i></button></a>
+    <div>
+        <a href="https://www.instagram.com/anwit.dahal/" target="_blank"><button class="btn instagram">Follow me<i class="fab fa-instagram"></i></button></a>
+    </div>
 
 
 </section>
@@ -67,7 +69,7 @@
 
 <section class="about" id="about">
 
-<h1 class="heading"> <span>About</span>  ME</h1>
+<h1 class="heading"> <span>About</span>  Me</h1>
 
 <div class="row">
 
@@ -122,21 +124,24 @@
 
 <!-- portfolio section starts -->
 
+
 <section class="portfolio" id="portfolio">
     <h1 class="heading">My <span>Projects</span></h1>
     <div class="box-container">
-
         <div class="box">
-            <img src="Images/Screenshot 2023-06-28 181455.png" alt="Image" title="Piano" data-website-url="https://example.com">
-
+            <div class="image-container">
+                <img src="Images/Screenshot 2023-06-28 181455.png" alt="Image">
+                <div class="overlay">
+                    <h3 class="topic">Simple Piano</h3>
+                    <p class="description">A simple piano made by simple JavaScript and CSS</p>
+                    <p class="description">(Don't expect too much)</p>
+                    <a href="https://anwitdahal.github.io/piano/" target="_blank" class="link-icon">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-
-        <div class="box">
-            <img src="Images/Screenshot 2023-06-28 181455.png" alt="">
-        </div>
-
-
-
+        <!-- Add more .box elements as needed -->
     </div>
 </section>
 
@@ -153,23 +158,42 @@
 
     <div class="row">
         <div class="content">
-            
-            <h3 class="title">Contact Info</h3>
+
+            <h3 class="title contact-info">Contact Info</h3>
 
             <div class="info">
                 <h3> <i class="fas fa-envelope"></i> dahalanwit0707@gmail.com </h3>
                 <h3> <i class="fas fa-phone"></i> +9779744378610 </h3>
                 <h3> <i class="fas fa-map-marker-alt"></i> Balkot-3,Suryabinayak,Nepal </h3>
+                <h1 class="title handle">My Social Media Handles</h1>
+                <div class="social-media">
+                    <div class="icons-row top-icons-row">
+                        <a href="https://www.facebook.com/anwit.dahal/" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/anwit.dahal/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/@DahalAnwit/" target="_blank"><i
+                                class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="icons-row bottom-icons-row">
+                        <a href="https://www.tiktok.com/@anwit.dahal" target="_blank"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://github.com/AnwitDahal" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:dahalanwit0707@gmail.com" target="_blank"><i
+                                class="far fa-envelope"></i></a>
+                    </div>
+                </div>
             </div>
 
         </div>
 
-        <form action="">
+        <form action="https://formspree.io/f/mjvqbddb" method="POST">
 
-            <input type="text" placeholder="name" class="box">
-            <input type="email" placeholder="email" class="box">
-            <input type="text" placeholder="Subject" class="box">
-            <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+            <input type="text" name="Name" placeholder="Name" class="box" required>
+            <input type="email" name="email" placeholder="Email Address" class="box" required>
+            <input type="text" name="subject" placeholder="Subject" class="box" required>
+            <textarea name="message" cols="30" rows="10" class="box message" placeholder="Message"
+                required></textarea>
             <button type="sumbit" class="btn"> Send <i class="fas fa-paper-plane"></i></button>
         </form>
 
