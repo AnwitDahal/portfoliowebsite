@@ -731,30 +731,30 @@ header .navbar ul li a:hover {
 
     .home .home-right {
         position: absolute;
-        top: 70%;
-        left: -10%;
-        transform: scale(0.7);
+        top: 65%;
+        left: -1%;
+        transform: scale(0.47);
     }
 
     .about .about-section .right {
         position: absolute;
         top: 115%;
-        left: -10%;
+        left: 2%;
     }
 
     .about .about-section .right img {
-        transform: scale(0.8);
+        transform: scale(0.65);
     }
 
     .about .about-section .left {
         position: relative;
-        top: 25rem;
+        top: 15rem;
         margin-top: 5rem;
     }
 
     .about .social-media i {
         position: relative;
-        top: 25rem;
+        top: 15rem;
         margin-bottom: 5rem;
         right: 100px;
     }
