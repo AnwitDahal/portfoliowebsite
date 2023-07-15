@@ -596,7 +596,12 @@ header .navbar ul li a:hover {
         margin: 0 3rem;
     }
 
-    .education .box-container .box,
+
+
+    .education .box-container .box {
+        width: 100%;
+    }
+
     .portfolio .box-container .box {
         width: 100%;
     }
@@ -608,8 +613,10 @@ header .navbar ul li a:hover {
 
 @media (max-width: 280px),
 (max-width: 840px) {
+    .contact .row .content .contact-info {
+        padding-left: 5rem;
+    }
 
-    .contact .row .content .contact-info,
     .contact .row .content .info h3 {
         padding-left: 5rem;
     }
@@ -617,8 +624,14 @@ header .navbar ul li a:hover {
 
 @media (max-width: 760px) {
 
-    .home h2,
-    .home h1,
+    .home h2 {
+        font-size: 3rem;
+    }
+
+    .home h1 {
+        font-size: 3rem;
+    }
+
     .home h3 {
         font-size: 3rem;
     }
@@ -636,11 +649,15 @@ header .navbar ul li a:hover {
         padding-left: 6rem;
     }
 
-    .contact .row .content .social-media .top-icons-row,
-    .contact .row .content .social-media .bottom-icons-row {
+    .contact .row .content .social-media .top-icons-row {
         flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 2rem;
+    }
+
+    .contact .row .content .social-media .bottom-icons-row {
+        flex-wrap: wrap;
+        justify-content: center;
         margin-top: 2rem;
     }
 
@@ -653,8 +670,17 @@ header .navbar ul li a:hover {
 }
 
 
-@media (min-width: 760px) and (max-width: 850px),
-(min-width:851px) and (max-width:990px) {
+
+@media (min-width: 760px) and (max-width: 850px) {
+    .home .home-right {
+        position: absolute;
+        left: 60%;
+    }
+
+
+}
+
+@media (min-width:851px) and (max-width:990px) {
     .home .home-right {
         position: absolute;
         left: 60%;
@@ -677,8 +703,7 @@ header .navbar ul li a:hover {
     }
 }
 
-@media (max-width:750px) and (min-width:400px),
-(max-width:400px) {
+@media (max-width:750px) and (min-width:400px) {
     .about .about-section .right {
         position: absolute;
         top: 112%;
@@ -689,16 +714,49 @@ header .navbar ul li a:hover {
         transform: scale(0.8);
     }
 
-    .about .about-section .left,
-    .about .social-media i {
+    .about .about-section .left {
         position: relative;
         top: 25rem;
         margin-top: 5rem;
     }
+
+    .about .social-media i {
+        position: relative;
+        top: 25rem;
+        margin-bottom: 5rem;
+    }
 }
 
-@media (max-height:570) {
-    .image-container-net {
-        position: static;
+@media (max-width:400px) {
+
+    .home .home-right {
+        position: absolute;
+        top: 70%;
+        left: -10%;
+        transform: scale(0.7);
     }
+
+    .about .about-section .right {
+        position: absolute;
+        top: 115%;
+        left: -10%;
+    }
+
+    .about .about-section .right img {
+        transform: scale(0.8);
+    }
+
+    .about .about-section .left {
+        position: relative;
+        top: 25rem;
+        margin-top: 5rem;
+    }
+
+    .about .social-media i {
+        position: relative;
+        top: 25rem;
+        margin-bottom: 5rem;
+        right: 100px;
+    }
+
 }
