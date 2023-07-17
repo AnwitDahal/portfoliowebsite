@@ -217,68 +217,45 @@ header .navbar ul li a:hover {
 
 }
 
-/* .home .home-content{
-    padding-top: 10rem;
-} */
 
-.about {
-    padding: 0 3rem;
+.about .about-section .left {
+    width: 45%;
 }
 
-.about-section {
-    display: flex;
+.about .about-section .left img {
     margin-top: 12rem;
+    height: 300px;
+    width: 300px;
+    float: left;
 }
 
-.about .left {
-    flex: 1;
-
+.about .about-section .right {
+    padding: 15rem 8rem;
 }
 
-.about .left p {
-    font-size: 2.1rem;
+.about .about-section .right p {
     color: #eee;
-    padding: 1rem 0;
+    font-size: 2.5rem;
 }
 
-.about .right {
-    flex: 0;
-    height: 300px;
-}
-
-.about div img {
-    margin-left: 2rem;
-    height: 300px;
-}
-
-
-
-.about .social-media {
-    margin-top: 10px;
-    height: 25rem;
-    width: 45rem;
-    padding-left: 10rem;
-}
-
-.about .social-media .icons {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.about .social-media .icons i {
-    font-size: 3rem;
+.about .about-section .right a {
+    display: inline-block;
     color: var(--blue);
-    transition: color 0.3s ease;
-    box-sizing: border-box;
-    border: 2px solid transparent;
+    font-size: 3rem;
+    padding: 5px 15px;
+    margin-top: 25rem;
     border-radius: 10%;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
 }
 
-.about .social-media .icons i:hover {
+.about .about-section .right a:hover {
     border: 2px solid var(--blue);
     background-color: var(--blue);
     color: #08090a;
 }
+
+
 
 
 .education .box-container {
@@ -544,6 +521,8 @@ header .navbar ul li a:hover {
 
 
 
+
+
 /* media queries  */
 
 
@@ -556,6 +535,12 @@ header .navbar ul li a:hover {
     .home {
         padding: 0 5rem;
     }
+
+    .about .about-section .left img {
+        height: 270px;
+        width: 270px;
+    }
+
 }
 
 @media (max-width: 1000px) {
@@ -581,6 +566,35 @@ header .navbar ul li a:hover {
     body {
         padding: 0;
     }
+
+
+}
+
+
+@media (max-width:947px) {
+    .about .about-section .column {
+        width: 100%;
+    }
+
+    .about .about-section .left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about .about-section .right {
+        flex: 100%;
+    }
+
+    .about .about-section .left img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .about .social-media {
+        height: 5rem;
+        width: 5rem;
+        padding-left: 50rem;
+    }
 }
 
 @media (max-width :768px) {
@@ -599,14 +613,23 @@ header .navbar ul li a:hover {
         margin-top: 4rem;
     }
 
-    .home .instagram{
+    .home .instagram {
         width: 150px;
         height: 45px;
         font-size: 2em;
     }
 
-    .home .instagram i{
+    .home .instagram i {
         font-size: .89em;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about img {
+        width: 70vw;
+        margin-top: 4rem;
     }
 
 }
@@ -617,6 +640,8 @@ header .navbar ul li a:hover {
     }
 }
 
+
+
 @media (max-width: 400px) {
     header {
         width: 100vw;
@@ -626,7 +651,13 @@ header .navbar ul li a:hover {
         margin: 0 3rem;
     }
 
+    .about .about-section .left img{
+        transform: scale(0.8);
+    }
 
+    .about .about-section .right{
+        padding-top: 03rem ;
+    }
 
     .education .box-container .box {
         width: 100%;
